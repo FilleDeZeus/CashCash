@@ -19,6 +19,10 @@ db.connect((err) => {
     console.log('Connecté à la base de données MySQL');
 });
 
+app.get('/', (req, res) => {
+    res.send('Bienvenu sur l\'API de CashCash !');
+});
+
 app.get('/utilisateurs', (req, res) => {
     db.query('SELECT * FROM Utilisateur', (err, result) => {
         if (err) {
