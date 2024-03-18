@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: absolute;
+    left: 20.5%;
+
+
+    .banniere{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0.5rem 1rem;
+
+        .informations{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+    
+            p{
+                margin-right: 2rem;
+            }
+        }
+    }
+}
